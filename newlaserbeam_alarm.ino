@@ -18,7 +18,7 @@ void loop()
   {
   for(int i=0;i<10;i++)
     digitalWrite(LED,HIGH);
-    Serial.print("DARK");
+    Serial.print("ALARM DETECTED");
     tone(Buzzer,1000);
     delay(500);
     tone(Buzzer,500);
@@ -28,7 +28,7 @@ void loop()
   else
   {
    digitalWrite(LED,LOW); 
-   Serial.print("LIGHT");
+   Serial.print("SYSTEM NORMAL");
    noTone(Buzzer);
   }
   delay(100);
